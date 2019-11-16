@@ -1,0 +1,31 @@
+<%= render "layouts/nav"%>
+<%= render "layouts/header"%>
+<strong>Business Name</strong>
+<%=@business.name%>
+<%= link_to 'Edit', edit_business_path(@business) %> |
+<%= link_to 'Back', businesses_path %>
+
+<div class="row">
+
+  <div class="col-3">
+      <h3>Available services</h3>
+      <%= render "businesses/unenrolled_services", business: @business%>
+  </div>
+
+  <div class="col-3">
+      <h3>Enrolled Services</h3>
+      <%= render "businesses/enrolled_services", business: @business%>
+  </div>
+
+  <div class="col-3">
+  <h3>Enrolled Cities</h3>
+  <%= render "businesses/enrolled_cities", business: @business%>
+
+  </div>
+
+  <div class="col-3">
+    <h3>Unenrolled Cities</h3>
+    <%= render "businesses/unenrolled_cities", business: @business%>
+  </div>
+
+</div>

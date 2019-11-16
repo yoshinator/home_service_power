@@ -1,0 +1,8 @@
+<%=render "layouts/nav"%>
+<%=render "layouts/header"%>
+<h1>Businesses#index</h1>
+<ul>
+  <% @businesses.each  do |b|%>
+    <li><%=link_to b.name, b %></li>
+  <%end%>
+</ul>
