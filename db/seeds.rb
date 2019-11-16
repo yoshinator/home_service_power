@@ -9,7 +9,7 @@
 # NJ 
 
 Business.create(name: "Master", email: "yoanante@gmail.com", phone: "201-675-6069")
-User.create(f_name: "Yoan", l_name: "Ante", email: "yoanante@gmail.com", username: "yoanante" phone: "201-675-6069", business_id: "1", admin: true, super_user: true)
+User.create(f_name: "Yoan", l_name: "Ante", email: "yoanante@gmail.com", username: "yoanante", business_id: "1", admin: true, super_user: true)
 
 ## Hudon County North East Jersey Market
 City.create(name: "Bayonne", county: "Hudson", state: "NJ")
