@@ -1,5 +1,5 @@
 class LeadMailer < ApplicationMailer
-  default from: 'action1septic@gmail.com'
+  default from: 'homeservicepower@gmail.com'
  
   def lead_email
     @lead = params[:lead]
