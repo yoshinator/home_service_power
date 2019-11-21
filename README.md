@@ -11,7 +11,7 @@ users Action Text to add rich text to the content.
 
 Set up omniauth for Google 
 
-* visit [https://console.cloud.google.com/apis/](Google cloud platform) create a project and from the hamburger go to the apis menu
+* visit [Google cloud platform](https://console.cloud.google.com/apis/) create a project and from the hamburger go to the apis menu
   
 
 * System dependencies
