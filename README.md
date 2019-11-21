@@ -1,11 +1,12 @@
 # README
 
 Home Service Power is a web application that allows small businessess to join a market to provide a list of 
-all the services they provide. They primary feature is to automatically create seo optimized pages from 
-templates for the services they provide mixed with a list of all the cities in that particular market. 
-At the moment site admins need to add a business and email to the database. A user can then finish registering
-by visiting /domain.com/auth/google_oauth2 which uses Omniauth for Authentication and then the user is 
-authorized on the backend to only view leads, users, services and market avaialbe for their business. 
+all the services they provide to all the cities in that market. The primary feature is to automatically 
+create seo optimized pages from templates for the services they provide mixed with a list of all the cities 
+in that particular market. At the moment site admins need to add a business and email to the database. 
+A user can then finish registering by visiting /domain.com/auth/google_oauth2 which uses Omniauth 
+for Authentication and then the user is authorized on the backend to only view leads, users, services and 
+market avaialbe for their business. 
 
 Templates for services can only be created by users with the attribute super_user. users with the 
 atttribute admin add more users, markets or services to their business. Service's are created using a 
