@@ -9,7 +9,7 @@
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Headquarters</h4>
               <hr class="my-4">
-              <div class="small text-black-50">Lumberton, New Jersey 08048</div>
+              <div class="small text-black-50">North Bergen, NJ 07047</div>
             </div>
           </div>
         </div>
@@ -21,10 +21,7 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <p>Junk Removal: </p><a href="mailto:djawscleanouts@gmail.com">DJawscleanouts@gmail.com </a>
-              </div>
-              <div class="small text-black-50">
-                <p>Septic: </p><a href="mailto:action1septic@gmail.com">action1septic@gmail.com </a>
+                <a href="mailto:<%=Business.first.email%>"><%=Business.first.email%> </a>
               </div>
             </div>
           </div>
@@ -35,9 +32,8 @@
             <div class="card-body text-center">
               <i class="fas fa-mobile-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Phone</h4>
-              <hr class="my-4"><div class="small text-black-50"><p>Junk Removal:</p>
-              <a href="tel:+18777747775">(877)-774-7775</div></a><div class="small text-black-50"><p>Septic:</p>
-              <a href="tel:+18777747776">(877)-774-7776</div></a>
+              <hr class="my-4"><div class="small text-black-50">
+              <a href="tel:+1<%=Business.first.email%>"><%=Business.first.email%></div></a>
             </div>
           </div>
         </div>
