@@ -15,7 +15,8 @@ their own lead form that creates leads for that business and also sends an email
 business provided. Would like to hook into Ringcentral api to also send text message to number associated
 with the business.
 
-# Set up omniauth for Google 
+# Configuration
+## Set up omniauth for Google 
 
 * visit [Google cloud platform](https://console.cloud.google.com/apis/) create a project and from the hamburger go to the apis menu Create and Oauth credential save your client id and client secret you will need to these to the project. Store those variable as ENV Variables in your login profile as GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET. 
 
@@ -29,19 +30,20 @@ with the business.
     get "/logout", to: "sessions#destroy"
   ```
 
-# Setting up Action Mailer with GMAIL and or Send Grid.
-* System dependencies
+## Setting up Action Mailer with GMAIL and or Send Grid.
+* TODO:
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+# Database creation
 
-* How to run the test suite
+* TODO: Database initialization
+
+* TODO: How to run the test suite
+
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
+# Deployment instructions
+* TODO:
 * ...
