@@ -68,7 +68,7 @@ Rails.application.configure do
 
     config.action_mailer.perform_deliveries = true
     config.action_mailer.perform_caching = false
-    config.action_mailer.default_url_options = { host: 'herokuapp.com', port: ENV['PORT'] }
+    config.action_mailer.default_url_options = { host: 'homeservicepower.com', port: ENV['PORT'] }
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
     address: "smtp.sendgrid.net",
@@ -77,7 +77,7 @@ Rails.application.configure do
     enable_starttls_auto: true,
     user_name: ENV['EMAIL'],
     password: ENV['EMAILERPW'], 
-    domain: "herokuapp.com",
+    domain: "homeservicepower.com",
     openssl_verify_mode: "none",
   }
 

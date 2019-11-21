@@ -9,11 +9,21 @@ authorized on the backend to only view leads, users, services and market avaialb
 add more users, markets or services to their business. Service's are created using a model called block that 
 users Action Text to add rich text to the content. 
 
-Set up omniauth for Google 
+# Set up omniauth for Google 
 
-* visit [Google cloud platform](https://console.cloud.google.com/apis/) create a project and from the hamburger go to the apis menu
+* visit [Google cloud platform](https://console.cloud.google.com/apis/) create a project and from the hamburger go to the apis menu Create and Oauth credential save your client id and client secret you will need to these to the project. Store those variable as ENV Variables in your login profile as GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET. 
+
+* Add all the domains the app will hosted on to the Oauth consent screen. 
+* Add the call back to each of these of domains. Make sure you add the call back url to Google. 
   
+  these are the routes for auth
+  ``` ruby 
+    get "auth/:provider/callback", to: "sessions#googleAuth"
+    get "auth/failure", to: redirect("/")
+    get "/logout", to: "sessions#destroy"
+  ```
 
+# Setting up Action Mailer with GMAIL and or Send Grid.
 * System dependencies
 
 * Configuration
